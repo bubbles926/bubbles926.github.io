@@ -67,3 +67,36 @@ main a[href^="mailto:"] {
 color: #ff5722;
 font-weight: bold;
 }
+.card img{
+     height: 200px;
+    object-fit: cover;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-h5 {
+    text-align: center;
+}
+
+.row .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.card-body {
+    min-height: 100px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
+}
