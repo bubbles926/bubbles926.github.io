@@ -88,7 +88,8 @@ body {
 }
 
 .hero .btn-primary {
-    background-color: var(--pink-nav);
+    background-color: var(--pink-nav) !important;
+    border-color: var(--pink-nav) !important;
     border: none;
     padding: 12px 32px;
     font-size: 1rem;
