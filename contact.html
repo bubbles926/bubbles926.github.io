@@ -1,124 +1,99 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – M&R Paragon</title>
 
-<meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>M&R Paragon</title>
-
-    <!-- Bootstrap CSS --> 
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
-
-    <!-- Custom CSS --> 
-
-    <link rel="stylesheet" href="styles.css"> 
-
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header> 
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">M&R Paragon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="new-arrivals.html">New Arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+    <main>
 
-        <div class="container"> 
+        <div class="container mt-5">
+            <h1 class="section-title">Contact Us</h1>
+            <p class="text-center mb-4" style="color: #7a4a55;">
+                We'd love to hear from you! Whether you have a question, want to place an order,
+                or just want to say hi — fill in the form below and we'll get back to you.
+            </p>
 
-            <a class="navbar-brand" href="index.html">M&R Paragon</a> 
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-
-                <span class="navbar-toggler-icon"></span> 
-
-            </button> 
-
-            <div class="collapse navbar-collapse" id="navbarNav"> 
-
-                <ul class="navbar-nav"> 
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="index.html">Home</a> 
-
-                    </li> 
-
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="shop.html">Shop</a> 
-                    
-                    </li>
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="about.html">About</a> 
-
-                    </li> 
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="contact.html">Contact</a> 
-
-                    </li> 
-
-                </ul> 
-
-            </div> 
-
-        </div> 
-
-    </nav> 
-
-</header> 
-
-<main class="container my-5"> 
-
-    <h2>Contact Us</h2> 
-
-    <p>We'd love to hear from you. Whether you have questions, collaboration inquiries or want to place an order. Reach out to us</p> 
-
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-
-        <div class="message-wrapper">
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
+            <form class="contact-form mt-4">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your message..." rows="5" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
         </div>
-    </form>
 
-</main> 
+        <div class="container mt-5 mb-5 text-center">
+            <h2 class="section-title">Visit Us</h2>
+            <p style="color: #7a4a55;">We are based in Gaborone, Botswana. Come say hello!</p>
 
-<div class="container mt-4 text-center">
-    <h3> Visit Us</h3>
-    <table class="business-hours">
-        <tr>
-            <td>Monday - Thursday </td>
-            <td>10:00 a.m - 16:00 p.m</td>
-        </tr>
-        
-        <tr>
-            <td> Friday - Sunday</td>
-            <td> Closed</td>
-        </tr>
-    </table>
-</div>
+            <table class="business-hours mt-3">
+                <tr>
+                    <td>Monday – Thursday</td>
+                    <td>10:00 AM – 4:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday – Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+        </div>
 
-<footer>
+    </main>
 
- <p class="mt-4">&copy; M&R Paragon - Bringing inspirations to life, one piece at a time</p>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/26700000000" class="whatsapp-float" target="_blank">
+        💬 WhatsApp Us
+    </a>
 
-</footer>
+    <footer>
+        <p>&copy; M&R Paragon – Bringing inspirations to life, one piece at a time</p>
+    </footer>
 
-    <!-- Bootstrap JS and dependencies --> 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
