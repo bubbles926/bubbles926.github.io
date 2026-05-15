@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback – M&R Paragon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">M&R Paragon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="new-arrivals.html">New Arrivals</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+
+        <h1 class="section-title mb-2">Share Your Feedback</h1>
+        <p class="text-center mb-5" style="color: #7a4a55;">We'd love to hear what you think about your M&R Paragon experience.</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <form id="feedbackForm" class="feedback-form" novalidate>
+
+                    <!-- Full Name -->
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                            minlength="2"
+                            maxlength="100"
+                        >
+                        <div class="invalid-feedback">Please enter your full name.</div>
+                    </div>
+
+                    <!-- Email Address -->
+                    <div class="mb-3">
+                        <label for="emailAddress" class="form-label">Email Address <span class="text-danger">*</span></label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="emailAddress"
+                            name="emailAddress"
+                            placeholder="Enter your email address"
+                            required
+                        >
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input
+                            type="tel"
+                            class="form-control"
+                            id="phoneNumber"
+                            name="phoneNumber"
+                            placeholder="e.g. +267 77 000 000"
+                            pattern="[+0-9\s\-()]{7,20}"
+                        >
+                        <div class="invalid-feedback">Please enter a valid phone number.</div>
+                    </div>
+
+                    <!-- Product Purchased -->
+                    <div class="mb-3">
+                        <label for="productPurchased" class="form-label">Product Purchased <span class="text-danger">*</span></label>
+                        <select class="form-control" id="productPurchased" name="productPurchased" required>
+                            <option value="" disabled selected>Select a product</option>
+                            <optgroup label="Cartier">
+                                <option value="Cartier Nail Ring">Cartier Nail Ring</option>
+                                <option value="Cartier Nail Bracelet">Cartier Nail Bracelet</option>
+                                <option value="Cartier Love Bracelet">Cartier Love Bracelet</option>
+                                <option value="Cartier Panthere Watch">Cartier Panthere Watch</option>
+                                <option value="Cartier Love Earrings">Cartier Love Earrings</option>
+                                <option value="Cartier Trinity Bracelet">Cartier Trinity Bracelet</option>
+                                <option value="Cartier Charm Bracelet">Cartier Charm Bracelet</option>
+                                <option value="Cartier Screw Double Rings Pendant Necklace">Cartier Screw Double Rings Pendant Necklace</option>
+                            </optgroup>
+                            <optgroup label="Van Cleef & Arpels">
+                                <option value="Van Cleef Necklace">Van Cleef Necklace</option>
+                                <option value="Van Cleef Bracelet">Van Cleef Bracelet</option>
+                                <option value="Van Cleef Alhambra Watch">Van Cleef Alhambra Watch</option>
+                                <option value="Van Cleef Alhambra Flower Bracelet">Van Cleef Alhambra Flower Bracelet</option>
+                                <option value="Van Cleef Alhambra Necklace">Van Cleef Alhambra Necklace</option>
+                                <option value="Van Cleef Alhambra Drop Earrings">Van Cleef Alhambra Drop Earrings</option>
+                                <option value="Van Cleef Perlee Signature Bracelet">Van Cleef Perlee Signature Bracelet</option>
+                                <option value="Van Cleef Vintage Alhambra Ring">Van Cleef Vintage Alhambra Ring</option>
+                            </optgroup>
+                            <optgroup label="Pandora">
+                                <option value="Pandora Elevated Heart Rose Ring">Pandora Elevated Heart Rose Ring</option>
+                                <option value="Pandora Crowned Bracelet">Pandora Crowned Bracelet</option>
+                                <option value="Pandora Ruby Birthstone Necklace">Pandora Ruby Birthstone Necklace</option>
+                                <option value="Pandora Watch">Pandora Watch</option>
+                                <option value="Pandora Square Sparkle Hoop Earrings">Pandora Square Sparkle Hoop Earrings</option>
+                                <option value="Pandora Blue Butterfly Necklace">Pandora Blue Butterfly Necklace</option>
+                                <option value="Pandora ME Royal Red Heart Bracelet">Pandora ME Royal Red Heart Bracelet</option>
+                                <option value="Pandora Sparkling Infinity Heart Stud Earrings">Pandora Sparkling Infinity Heart Stud Earrings</option>
+                            </optgroup>
+                        </select>
+                        <div class="invalid-feedback">Please select a product.</div>
+                    </div>
+
+                    <!-- Overall Rating -->
+                    <div class="mb-3">
+                        <label class="form-label">Overall Rating <span class="text-danger">*</span></label>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rating" id="rating5" value="5" required>
+                                <label class="form-check-label" for="rating5">⭐⭐⭐⭐⭐ Excellent</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rating" id="rating4" value="4">
+                                <label class="form-check-label" for="rating4">⭐⭐⭐⭐ Good</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rating" id="rating3" value="3">
+                                <label class="form-check-label" for="rating3">⭐⭐⭐ Average</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rating" id="rating2" value="2">
+                                <label class="form-check-label" for="rating2">⭐⭐ Poor</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rating" id="rating1" value="1">
+                                <label class="form-check-label" for="rating1">⭐ Very Poor</label>
+                            </div>
+                        </div>
+                        <div class="invalid-feedback d-block" id="ratingError" style="display:none!important;"></div>
+                    </div>
+
+                    <!-- How did you hear about us -->
+                    <div class="mb-3">
+                        <label for="hearAboutUs" class="form-label">How did you hear about us?</label>
+                        <select class="form-control" id="hearAboutUs" name="hearAboutUs">
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Friend or Family">Friend or Family</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Would you recommend us -->
+                    <div class="mb-3">
+                        <label class="form-label">Would you recommend M&R Paragon to others? <span class="text-danger">*</span></label>
+                        <div class="d-flex gap-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="recommend" id="recommendYes" value="Yes" required>
+                                <label class="form-check-label" for="recommendYes">Yes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="recommend" id="recommendNo" value="No">
+                                <label class="form-check-label" for="recommendNo">No</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="recommend" id="recommendMaybe" value="Maybe">
+                                <label class="form-check-label" for="recommendMaybe">Maybe</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="mb-3">
+                        <label for="comments" class="form-label">Additional Comments <span class="text-danger">*</span></label>
+                        <textarea
+                            class="form-control"
+                            id="comments"
+                            name="comments"
+                            rows="5"
+                            placeholder="Tell us about your experience with our products and service..."
+                            required
+                            minlength="10"
+                        ></textarea>
+                        <div class="invalid-feedback">Please share at least a few words about your experience.</div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn-submit">Submit Feedback</button>
+                    </div>
+
+                    <!-- Thank you message (hidden by default) -->
+                    <div id="thankYouMsg" class="thank-you-msg" style="display: none;">
+                        💖 Thank you for your feedback! We truly appreciate your support.
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <a href="https://wa.me/26777081500" class="whatsapp-float" target="_blank">💬 WhatsApp Us</a>
+
+    <footer>
+        <p>&copy; M&R Paragon – Bringing inspirations to life, one piece at a time</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // HTML5 form validation with custom feedback
+        const form = document.getElementById('feedbackForm');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Check rating manually (radio buttons need custom check)
+            const ratingSelected = document.querySelector('input[name="rating"]:checked');
+            const ratingError = document.getElementById('ratingError');
+            if (!ratingSelected) {
+                ratingError.textContent = 'Please select a rating.';
+                ratingError.style.display = 'block';
+            } else {
+                ratingError.style.display = 'none';
+            }
+
+            // Check recommend manually
+            const recommendSelected = document.querySelector('input[name="recommend"]:checked');
+
+            if (!form.checkValidity() || !ratingSelected || !recommendSelected) {
+                form.classList.add('was-validated');
+                return;
+            }
+
+            // If all valid — show thank you message
+            form.classList.add('was-validated');
+            form.style.display = 'none';
+            document.getElementById('thankYouMsg').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
