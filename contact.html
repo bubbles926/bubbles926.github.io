@@ -41,12 +41,13 @@
                 or just want to say hi — fill in the form below and we'll get back to you.
             </p>
 
-            <form class="contact-form mt-4">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Subject" required>
-                <textarea placeholder="Your message..." rows="5" required></textarea>
+            <form class="contact-form mt-4" id="contactForm" novalidate>
+                <input type="text" name="fullName" placeholder="Your Name" required minlength="2">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required minlength="2">
+                <textarea name="message" placeholder="Your message..." rows="5" required minlength="10"></textarea>
                 <button type="submit" class="btn-submit">Send Message</button>
+                <div id="contactThankYou" class="thank-you-msg" style="display:none;">💖Thank you! We'll get back to you soon.</div>
             </form>
         </div>
 
@@ -75,5 +76,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (this.checkValidity()) {
+                this.style.display = 'none';
+                document.getElementById('contactThankYou').style.display = 'block';
+            else {
+                this.reportValidity();
+            }
+            }
+        });
+    </script>
 </body>
 </html>
